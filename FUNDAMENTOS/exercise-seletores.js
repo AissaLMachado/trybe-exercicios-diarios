@@ -1,26 +1,20 @@
-document.getElementById("page-title").innerHTML = "O GATO DE BOTAS!";
-//
-const paragraph = document.getElementById("paragraph");
-      paragraph.style.color = "blue";
-      paragraph.style.fontSize = "30px";
-      paragraph.style.height = '100px';
-      paragraph.style.backgroundColor = 'purple';
-      paragraph.style.fontWeight = '100px';
-//
-document.getElementById("subtitle").innerHTML = "ASSISTA AQUI:";
-const subtitle = document.getElementById("subtitle");
-subtitle.style.color = "blue";
-//
 
-document.getElementsByClassName("teste")
-const teste = document.getElementsByClassName("teste");
-for (let i = 0; i < teste.length; i += 1) {
-teste[i].style.color = "blue";
-teste[i].style.fontSize = "30px";
+const headerContainer = document.querySelector('#header-container')
+headerContainer.style.backgroundColor = 'rgba(0,194,110,255)';
+
+const emergencyTasks = document.getElementsByClassName('emergency-tasks')[0];
+emergencyTasks.style.backgroundColor = 'rgb(251,148,132)';
+
+
+const noEmergencyTasks = document.getElementsByClassName('no-emergency-tasks')[0];
+noEmergencyTasks.style.backgroundColor = 'rgb(251,148,132)';
+
+const emergencyTasksHeaders = document.querySelectorAll('.emergency-tasks h3');
+for (let index = 0; index < emergencyTasksHeaders.length; index += 1) {
+  emergencyTasksHeaders[index].style.backgroundColor = 'rgb(165, 0, 243)';
 }
-//
 
-//Recupere o subtítulo e altere a cor dele usando a função getElementsByTagName.
-const h4 = document.getElementsByTagName("h4");
-h4[0].style.color = "pink";
-h4[0].style.fontSize = "30px";
+const noEmergencyTaskHeaders = document.querySelectorAll('.no-emergency-tasks h3');
+for (let index = 0; index < noEmergencyTaskHeaders.length; index += 1){
+      noEmergencyTaskHeaders[index].style.backgroundColor = 'rgb(165, 0, 243)';
+}
